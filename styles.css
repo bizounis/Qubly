@@ -254,6 +254,15 @@ a{
 	clip-path: polygon(100% 50%, 0 100%, 100% 100%);
 }
 
+@media screen and (max-width: 500px) {
+	.review::before{
+		clip-path: polygon(100% 0%, 0% 0%, 0% 20%);
+	}
+
+	.review::after{
+		clip-path: polygon(100% 80%, 0% 100%, 100% 100%);
+	}
+}
 .avatar{
 	width:auto;
 	height: 100%;

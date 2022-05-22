@@ -13,50 +13,57 @@
 </head>
 <body>
 	<!--NAV & INTRO START-->
-	<div class="container-fluid min-vh-100 intro border border-info">
-		<nav class="navbar navbar-expand-lg border border-danger">
+	<div class="container-fluid min-vh-100 intro">
+		<nav class="navbar navbar-expand-lg">
 			<div class="container px-5">
-				<a class="navbar-brand" href="#">
-					<img src="/assets/Qubly.png" alt="Qubly" class="img-responsive logo">
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<img src="/assets/Qubly.png" alt="Qubly" class="img-responsive logo">
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				
-				<ul class="nav justify-content-between align-items-center">
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							About
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="#">Action</a></li>
-							<li><a class="dropdown-item" href="#">Another action</a></li>
-							<li><hr class="dropdown-divider"></li>
-							<li><a class="dropdown-item" href="#">Something else here</a></li>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body text-center">
+						<ul class="nav navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									About
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+									<li><a class="dropdown-item" href="#">Action</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item" href="#">Something else here</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Pricing</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contact us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link">Login</a>
+							</li>
+							
+							<li class="nav-item">
+								<button type="button" class="btn outlinebtn">Start free trial</button>
+							</li>
 						</ul>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Pricing</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contact Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link">Login</a>
-					</li>
-					<li class="nav-item">
-						<button type="button" class="btn outlinebtn">Start free trial</button>
-					</li>
-				</ul>
+					</div>
+				</div>
 			</div>
 		</nav>
-
-    <div class="container col-xxl-9 px-4 intro-wrapper py-lg-5 py-sm-5 py-md-2 border border-primary">
-      <div class="row flex-lg-row-reverse align-items-center g-sm-2 g-xl-5 px-sm-5 py-lg-5 border border-info">
-        <div class="col-sm-12 col-lg-6 border border-danger d-flex justify-content-center">
-          <img src="./assets/intro.png" class="d-block mx-sm-auto mx-lg-auto img-fluid floating_effect intro_img border border-success" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+    <div class="container col-xxl-9 px-4 intro-wrapper py-lg-5 py-sm-5 py-md-2">
+      <div class="row flex-lg-row-reverse align-items-center g-sm-2 g-xl-5 px-sm-5 py-lg-5">
+        <div class="col-sm-12 col-lg-6 d-flex justify-content-center">
+          <img src="./assets/intro.png" class="d-block mx-sm-auto mx-lg-auto img-fluid floating_effect intro_img" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
         </div>
-        <div class="col-lg-6 border border-danger">
+        <div class="col-lg-6">
           <i class="fa-solid fa-sparkles"></i>
           <p>v3.1 released. <a href="#">Learn more!</a></p>
           <h1 class="display-5 fw-bold lh-1 mb-3">Your data with real-time analytics</h1>
@@ -112,8 +119,8 @@
           <h3 class="mb-3">Launch with the <span class="purple">best</span> stack</h3>
           <p class="lead">A centralized platform that integrates zillions of data sources using Big Data ELT (Extract, Load & Transform) that leaves no data behind.</p>
         </div>
-				<div class="col-sm-2 col-lg-6 border border-secondary text">
-          <img src="./assets/launch.png" class="d-block mx-lg-auto img-fluid info_img border border-success" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+				<div class="col-lg-6 px-5 border border-secondary text">
+          <img src="./assets/launch.png" class="mx-sm-auto d-lg-flex d-sm-flex justify-content-center img-fluid info_img border border-success" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
         </div>
       </div>
     </div>
@@ -121,7 +128,7 @@
 	<div class="container col-xxl-9 px-4 py-5 info_wrapper border border-danger">
 		<div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
 			<div class="col-lg-6 px-5 border border-success">
-				<img src="./assets/data.png" class="mx-auto img-fluid info_img border border-primary" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+				<img src="./assets/data.png" class="mx-sm-auto d-lg-flex d-sm-flex justify-content-center img-fluid info_img border border-success" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
 			</div>
 			<div class="col-lg-6 border border-info">
 				<div class="border border-warning">
@@ -141,14 +148,14 @@
 
 	<!--REVIEW SECTION START-->
 	<section class="container-fluid review d-flex justify-content-center align-items-center min-vh-100 review_bg">
-    <div class="container col-xxl-9 px-4  ">
-      <div class="row flex-lg-row-reverse align-items-center  text-center">
+    <div class="container col-xxl-9 px-4  border border-success">
+      <div class="row flex-lg-row-reverse align-items-center text-center">
 				<p class="py-5">"What I love about Qubly is the easy way we can collaborate even if there is a lot of people involved in the process"</p>
         <img src="./assets/Profile.png" alt="" class="avatar">
 				<h5 class="mb-3">Guillaume Cabane <br/>CTO @ BigSpring</h5>
-				<div class="row b">
-					<img src="./assets/Tonkean.png" alt="" class="col gx-5 partner_logo img-fluid img-responsive">
-					<img src="./assets/Tonkean.png" alt="" class="col gx-5 partner_logo img-fluid img-responsive">
+				<div class="row border border-info">
+					<img src="./assets/Tonkean.png" alt="" class="col-sm-6 gx-5 partner_logo img-fluid img-responsive">
+					<img src="./assets/Tonkean.png" alt="" class="col-sm-6 partner_logo img-fluid img-responsive">
 					<img src="./assets/Tonkean.png" alt="" class="col gx-5 partner_logo img-fluid img-responsive">
 					<img src="./assets/Tonkean.png" alt="" class="col gx-5 partner_logo img-fluid img-responsive">
 					<img src="./assets/Tonkean.png" alt="" class="col gx-5 partner_logo img-fluid img-responsive">
@@ -165,10 +172,9 @@
 				<form class=" ">
 					<h3 class="">Stay up to date</h3>
 					<p class="lead">Subscribe to our newsletter and be the first to know about our newly launched products, special offers and more.</p>
-					<div class="form-group  px-5 row wrap">
+					<div class="form-group row px-5">
 						<input type="email" class="form-control col" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-						
-						<button type="submit" class="col-2 btn btn-primary solidbtn">Subscribe</button>
+						<button type="submit" class="col-4 btn btn-primary outlinebtn">Subscribe</button>
 					</div>
 				</form>
 				
