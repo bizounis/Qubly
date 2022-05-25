@@ -10,6 +10,7 @@
 	--primary-purple: #722ED1;
 	--dark-purple: #160637;
 	--light-purple: #F7F1FF;
+	--light-pink: #F9F0FF;
 	--review-gradient: linear-gradient(175.54deg, #F9F0FF 25.81%, #E2F1FF 96.38%);
 	--logo-fill: #8989A2;
 }
@@ -134,7 +135,6 @@ a{
 .purple{
 	color: var(--primary-purple);
 }
-
 /************/
 
 .feature{
@@ -283,12 +283,13 @@ a{
 }
 
 .partner_logo{
-	padding: 2rem;
+	opacity: 0.5;
 }
 
 .partner_logo:hover{
-	color: #160637;
 	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s ease;
 }
 
 /********************/
